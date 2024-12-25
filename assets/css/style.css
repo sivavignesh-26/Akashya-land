@@ -1,0 +1,311 @@
+/*----------<FONTFAMILY>-----------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Spartan:wght@400;500;600;700&display=swap');
+:root{
+    --background-color: #026670;
+    --color: #DDDDDD;
+    --text-black: #000000;
+    --border-color: #026670;
+    --body-font: 'lato', sans-serif;
+    --second-font: 'Spartan', sans-serif;
+    --main-text-color: #6C6C6C;
+    --black-bg: #1C1C1C;
+
+}
+*{
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ---------<FIRSTNAV>------------ */
+.Topnav{
+    background-color: var(--background-color);
+}
+
+.navcontent{
+    width: 500px;
+}
+
+.navlist a{
+    color: var(--color);
+    text-decoration: none;
+}
+
+.navlist p{
+    position: relative;
+    top: 0.5rem;
+}
+
+.navlist-img{
+    width: 20px;
+}
+
+.navlist-img-phone{
+    transform: rotate(-75deg);
+}
+
+/* ------------<SECOND NAV>------------------ */
+
+.akshaya-img{
+    width: 103px;
+    height: 98px;
+}
+
+.nav-documents{
+    width: 400px;
+}
+
+.navsecond-content div p{
+    border: 1px solid var(--border-color);
+    padding: 10px 22px;
+    border-radius: 0.5rem;
+    color: var(--background-color);
+}
+
+.navsecond-content p:nth-child(2){
+    color: var(--background-color);
+    font-size: 1.2rem !important;
+    font-weight: 500;
+    position: relative;
+    top: 10px;
+    letter-spacing: 1px;
+
+}
+
+.navsecond-content a{
+    background-color: var(--background-color);
+    height: fit-content;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+
+/* ----------HOMESECTION------------- */
+.home-section{
+    min-height: 90vh;
+    max-width: 100%;
+    background-image: url(Banner\ Image\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.home-section .container{
+    margin-top: 8rem !important;
+}
+
+.home-section-content{
+    line-height: 30px;
+}
+
+.home-section-content h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    white-space: wrap;
+    width: 400px;
+    line-height: 3.5rem;
+}
+
+.home-section-content p{
+    color: var(--main-text-color);
+    width: 400px;
+}
+
+.home-section-content h1 span{
+    color: var(--background-color);
+}
+
+.home-section-list{
+    width: 200px;
+}
+
+.home-section-list a p{
+    color: var(--main-text-color);
+}
+
+.home-section-list a:nth-child(1) p{
+    background-color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 8px 8px 8px 0;
+    color: var(--background-color);
+    font-weight: 600;
+}
+
+.home-section-inputs{
+    background-color: #ffffff;
+    width: 700px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    position: relative;
+    bottom: 1.1rem;
+}
+
+.home-section-inputs input{
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 5px 30px;
+}
+
+.home-section-inputs i{
+    z-index: 9999;
+    color: #6C6C6C;
+}
+
+.home-section-inputs a button{
+    border: none;
+    background-color: var(--background-color);
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-family: var(--body-font);
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+
+.home-section-inputs a button:hover{
+    color: blanchedalmond;
+    padding: 10px 50px;
+}
+
+/* ------------------------------->CARD SLIDER<----------------------------------------- */
+
+.name{
+    color: var(--main-text-color);
+}
+
+.description{
+    color: var(--background-color);
+    background-color: #EBFFF9;
+    /* border: 1px solid var(--background-color); */
+    font-size: 13px;
+    padding: 2px 5px;
+}
+
+.button-card .button{
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--background-color);
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.button-card .button i{
+    transition: all 1s ease;
+}
+
+.button-card .button:hover i{
+    margin-right: 2rem;
+}
+/* ----------<FOOTER>------------- */
+footer{
+    background-color: var(--black-bg);
+    row-gap: 10px;
+}
+
+.footer div a img{
+    height: 93px;
+    width: 103px;
+}
+
+.paracolor{
+    color: #DDDDDD; 
+}
+
+.footerph-img{
+    transform: rotate(-70deg);
+}
+
+.paracolor img{
+    width: 20px;
+}
+
+.paracolor .location-img{
+    width: 15px;
+}
+
+
+/* -----COMMON STYLE------ */
+a{
+    text-decoration: none;
+}
+
+/* ---------------<MEDIA QUERYT>------------------ */
+
+@media (max-width:770px){
+    .home-section-inputs{
+        width: 600px;
+    }
+
+}
+
+@media (max-width:700px){
+    .home-section-inputs{
+        width: 450px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width:470px){
+    .home-section-inputs{
+        width: 400px;
+        padding: 5px;
+    }
+    .home-section-inputs a button{
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width:470px){
+    .home-section-inputs{
+        width: 350px;
+    }
+}
+@media (max-width:640px){
+
+    .card{
+        width: 15rem !important;
+        height: fit-content !important;
+    }
+    
+}
+
+@media (max-width:540px){
+    .akshaya-img{
+        width: 83px;
+        height: 78px;
+    }
+}
+
+@media (max-width:770px){
+    .navsecond-content div p{
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width:480px){
+    .navsecond-content p:nth-child(2){
+        font-size: 15px !important;
+        letter-spacing: 0;
+    }
+
+    .navsecond-content a{
+        padding: 5px 10px;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:420px){
+    .navsecond-content div p{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+}
+
